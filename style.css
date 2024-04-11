@@ -1,0 +1,72 @@
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+section {
+  width: 100vh;
+  height: 100%;
+}
+
+canvas {
+  background: url("tierra.jpg");
+  width: 100%;
+  height: 95vh;
+  background-size: cover;
+}
+
+h3 {
+  text-align: center;
+  margin: 0;
+}
+
+@media (max-width: 680px) {
+  .cruceta {
+    display: flex !important;
+  }
+}
+
+.cruceta {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 54px;
+  right: 27px;
+}
+
+.cruceta>div {
+  display: flex;
+  position: relative;
+}
+
+button {
+  width: 45px;
+  height: 30px;
+  border: 1px solid #000;
+  border-radius: 20%;
+}
+
+.GameOver {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+span {
+  position: absolute;
+  right: 70px;
+  top: 40px;
+}
+
+.Game {
+  position: relative;
+}
